@@ -127,7 +127,6 @@ Project/
 * 🔔 Toast notifications
 * 👥 Team member role management
 * 📱 Mobile responsive layout
-* 🛍️ Organizer dashboard (optional)
 
 ---
 
