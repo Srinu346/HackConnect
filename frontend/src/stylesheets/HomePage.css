@@ -1,0 +1,98 @@
+.homepage-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e3a8a, #9333ea);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-links button {
+  margin-left: 1.5rem;
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.navbar-links button:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Welcome */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.welcome-subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #d1d5db;
+}
+
+/* Cards */
+.action-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.action-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 260px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}

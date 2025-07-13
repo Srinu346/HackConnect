@@ -1,0 +1,102 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+/* Input and Textarea Styling */
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(4px);
+  outline: none;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  border-color: #e879f9; /* pink highlight */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Member input row styling */
+.member-input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  align-items: center;
+}
+
+.member-input-group button {
+  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+  color: #f87171;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.member-input-group button:hover {
+  color: #ef4444;
+}
+
+/* Add member button */
+.add-member-button {
+  font-size: 0.875rem;
+  color: #f472b6;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.add-member-button:hover {
+  color: #ec4899;
+}
+
+/* Section label */
+label {
+  display: block;
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+/* Text area */
+textarea.input {
+  resize: none;
+  min-height: 96px;
+}
